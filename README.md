@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Take home project
 
-## Getting Started
+This is a simple e-commerce application that a customer can use to purchase a book, but it's missing the payments functionality — your goal is to integrate Stripe to get this application running!
 
-First, run the development server:
+## Candidate instructions
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+You'll recieve these by email
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Application overview
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+This demo is written in [React](https://reactjs.org/) using [Typescript](https://www.typescriptlang.org/) and the [NextJS Framework](https://nextjs.org/). You'll need to retrieve a set of test mode API keys from the Stripe dashboard (you can create a free test account [here](https://dashboard.stripe.com/register)) to run this locally.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+For layout and styling, we're using [React Bootstrap](https://react-bootstrap.github.io/) along with [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/). We've selected this combo because of Bootstrap's relative ubiquity within the web development world. That said, feel free to modify styles or layouts or use a styling system/solution that you are more familiar with.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+In a production application, we would use a database to store information about the products we're selling. To make things simpler for this project, we've hardcoded our inventory at `/config/inventory.ts`.
 
-## Learn More
+## Installation instructions
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone this repository and run `npm install` or `yarn` to install dependencies
+2. Rename `sample.env.local` to `env.local` and populate with your Stripe account's test mode API keys
+3. Run the application with `npm dev` or `yarn dev`
