@@ -18,7 +18,7 @@ In a production application, we would use a database to store information about 
 
 1. Clone this repository and run `npm install` or `yarn` to install dependencies
 2. Rename `sample.env.local` to `env.local` and populate with your Stripe account's test mode API keys
-3. Run the application with `npm dev` or `yarn dev`
+3. Run the application with `npm run dev` or `yarn dev`
 
 ## About NextJS
 
